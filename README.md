@@ -6,7 +6,9 @@ The intent of this starter is to be really slim so it's not a nightmare to remov
 
 - Babel
 - TypeScript
-- Husky pre-commit hook that typechecks the codebase
+- ESLint
+- Prettier
+- Husky pre-commit hook that runs ESLint and type checks the code base
 - A few npm scripts
 
 ## Scripts
@@ -15,3 +17,8 @@ The intent of this starter is to be really slim so it's not a nightmare to remov
 - `yarn build`. Compiles the project to the `./dist` folder.
 - `yarn typecheck`. Checks the typings of the project. Gets executed before trying to create a new commit but you can also run it manually.
 - `yarn start`. Runs the compiled program. Remember to execute `yarn build` before attempting to launch the program.
+- `yarn lint`. Runs ESLint. You can append `--fix` in order to fix autofixable issues.
+
+## What to do next
+
+Adapt the configuration to your needs and start coding!
