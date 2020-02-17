@@ -1,5 +1,28 @@
 # Node TypeScript Starter
 
+## Getting started
+
+1. Clone this repository and open it
+
+```bash
+$ git clone https://github.com/HorusGoul/node-ts-starter your-next-project
+$ cd your-next-project
+```
+
+2. Install dependencies
+
+```bash
+$ yarn
+```
+
+3. Launch the dev mode
+
+```bash
+$ yarn dev
+```
+
+4. You can start coding! The entry point is located in `src/index.ts`.
+
 ## What's preconfigured?
 
 The intent of this starter is to be really slim so it's not a nightmare to remove or change stuff, that's why there are just a few things preconfigured:
