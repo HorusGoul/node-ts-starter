@@ -1,16 +1,16 @@
 {
   "name": "node-ts-starter",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.js",
   "author": "Horus Lugo",
   "license": "MIT",
   "scripts": {
-    "dev": "tsnd --respawn -r @babel/register src/index.ts",
-    "build": "babel ./src -d ./dist --extensions .ts",
+    "dev": "tsnd --respawn --files -r @babel/register --inspect -- src/index.ts",
+    "build": "babel ./src -d ./dist --extensions .ts --copy-files",
     "typecheck": "tsc",
     "start": "node dist/index.js",
     "lint:base": "eslint --ext .js,.json,.ts",
-    "lint": "yarn lint:base 'src/**'"
+    "lint": "yarn lint:base src"
   },
   "lint-staged": {
     "src/**/*": [
@@ -24,23 +24,23 @@
     }
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.4",
-    "@babel/node": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "@babel/preset-typescript": "^7.8.3",
-    "@babel/register": "^7.8.3",
-    "@types/node": "^13.7.1",
-    "@typescript-eslint/eslint-plugin": "^2.19.2",
-    "@typescript-eslint/parser": "^2.19.2",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "husky": "^4.2.3",
-    "lint-staged": "^10.0.7",
-    "prettier": "^1.19.1",
-    "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "^3.7.5"
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "@babel/register": "^7.11.5",
+    "@types/node": "^14.6.3",
+    "@typescript-eslint/eslint-plugin": "^4.0.1",
+    "@typescript-eslint/parser": "^4.0.1",
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.3.0",
+    "prettier": "^2.1.1",
+    "ts-node-dev": "^1.0.0-pre.62",
+    "typescript": "^4.0.2"
   },
   "engines": {
     "node": ">=12"
