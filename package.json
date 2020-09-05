@@ -13,7 +13,7 @@
     "lint": "yarn lint:base src"
   },
   "lint-staged": {
-    "src/**/*": [
+    "src/**/*.{ts,js,json}": [
       "yarn lint:base --fix",
       "git add"
     ]
