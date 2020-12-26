@@ -14,8 +14,7 @@
   },
   "lint-staged": {
     "src/**/*.{ts,js,json}": [
-      "yarn lint:base --fix",
-      "git add"
+      "yarn lint:base --fix"
     ]
   },
   "husky": {
