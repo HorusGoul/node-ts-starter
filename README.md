@@ -31,7 +31,7 @@ The intent of this starter is to be really slim so it's not a nightmare to remov
 - TypeScript
 - ESLint
 - Prettier
-- Husky pre-commit hook that runs ESLint and type checks the code base
+- A pre-commit hook that runs ESLint and type checks the code base
 - A few npm scripts
 
 ## Scripts
